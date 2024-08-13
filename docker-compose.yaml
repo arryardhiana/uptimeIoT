@@ -1,0 +1,10 @@
+version: '3'
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    container_name: uptime-IoT
+    ports:
+      - "3001:3001"
+    volumes:
+      - /srv/www/arry/docker-data/uptimeIoT:/app/data
+    restart: always
